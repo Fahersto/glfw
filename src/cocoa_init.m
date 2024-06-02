@@ -552,6 +552,7 @@ GLFWbool _glfwConnectCocoa(int platformID, _GLFWplatform* platform)
         .getWindowOpacity = _glfwGetWindowOpacityCocoa,
         .setWindowResizable = _glfwSetWindowResizableCocoa,
         .setWindowDecorated = _glfwSetWindowDecoratedCocoa,
+        _glfwSetWindowFloatingNull,
         .setWindowFloating = _glfwSetWindowFloatingCocoa,
         .setWindowOpacity = _glfwSetWindowOpacityCocoa,
         .setWindowMousePassthrough = _glfwSetWindowMousePassthroughCocoa,
@@ -559,6 +560,8 @@ GLFWbool _glfwConnectCocoa(int platformID, _GLFWplatform* platform)
         .waitEvents = _glfwWaitEventsCocoa,
         .waitEventsTimeout = _glfwWaitEventsTimeoutCocoa,
         .postEmptyEvent = _glfwPostEmptyEventCocoa,
+         // Lentic
+        _glfwSetWindowTitlebarNull,
         .getEGLPlatform = _glfwGetEGLPlatformCocoa,
         .getEGLNativeDisplay = _glfwGetEGLNativeDisplayCocoa,
         .getEGLNativeWindow = _glfwGetEGLNativeWindowCocoa,

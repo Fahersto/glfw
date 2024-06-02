@@ -1242,6 +1242,9 @@ GLFWbool _glfwConnectX11(int platformID, _GLFWplatform* platform)
         .postEmptyEvent = _glfwPostEmptyEventX11,
         .getEGLPlatform = _glfwGetEGLPlatformX11,
         .getEGLNativeDisplay = _glfwGetEGLNativeDisplayX11,
+        // Lentic
+        _glfwSetWindowTitlebarNull,
+
         .getEGLNativeWindow = _glfwGetEGLNativeWindowX11,
         .getRequiredInstanceExtensions = _glfwGetRequiredInstanceExtensionsX11,
         .getPhysicalDevicePresentationSupport = _glfwGetPhysicalDevicePresentationSupportX11,
